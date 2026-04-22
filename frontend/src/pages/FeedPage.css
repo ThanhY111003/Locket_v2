@@ -1,0 +1,127 @@
+.feed-page {}
+
+.feed-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.feed-month-badge {
+  text-align: right;
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  padding: 12px 20px;
+  border-radius: var(--radius-md);
+}
+
+.feed-month-label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.feed-month-amount {
+  font-size: 20px;
+  font-weight: 800;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* AI Banner */
+.feed-ai-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, rgba(124,58,237,0.1), rgba(236,72,153,0.1));
+  border: 1px solid rgba(124,58,237,0.3);
+  border-radius: var(--radius-md);
+  margin-bottom: 32px;
+}
+
+.feed-ai-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--gradient-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+  box-shadow: var(--shadow-glow);
+}
+
+.feed-ai-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--purple-light);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.feed-ai-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* Section header */
+.feed-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.feed-section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.feed-posts {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Search bar */
+.feed-search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+.feed-search-bar .input-field-icon { position: relative; }
+
+/* Friends search form */
+.friends-search-form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* btn-xs */
+.btn-xs {
+  padding: 4px 8px;
+  font-size: 12px;
+  height: auto;
+  min-width: 0;
+}

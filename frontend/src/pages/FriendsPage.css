@@ -1,0 +1,142 @@
+.friends-stats {
+  display: flex;
+  gap: 16px;
+}
+
+.friends-stat {
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  padding: 12px 20px;
+  text-align: center;
+}
+
+.friends-stat-num {
+  font-size: 24px;
+  font-weight: 800;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.friends-stat-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.friends-section {
+  margin-bottom: 32px;
+}
+
+.friends-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.friends-section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-bottom: 14px;
+}
+
+.friends-section-header .friends-section-title {
+  margin-bottom: 0;
+}
+
+.friends-search {
+  width: 220px;
+}
+
+/* Friends list (horizontal card) */
+.friends-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.friend-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.friend-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.friend-avatar {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.friend-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.friend-sub {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.friend-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* Friends grid (card grid) */
+.friends-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.friend-user-card {
+  padding: 24px 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.fuc-avatar {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.fuc-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.fuc-sub {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.fuc-since {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.fuc-badge { margin-top: 4px; }
