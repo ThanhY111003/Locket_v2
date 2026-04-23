@@ -454,3 +454,32 @@ body {
   animation: shimmer 1.5s infinite;
   border-radius: var(--radius-sm);
 }
+
+/* ===== Responsive Design / Mobile Setup ===== */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    padding-bottom: 64px; /* Thêm padding dưới để không bị Sidebar che khuất */
+  }
+
+  .page-container {
+    padding: 20px 16px;
+  }
+
+  .page-title {
+    font-size: 24px;
+  }
+
+  .stat-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+  }
+  
+  .card {
+    border-radius: var(--radius-md);
+  }
+}

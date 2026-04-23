@@ -146,3 +146,71 @@
   color: var(--red);
   background: rgba(239, 68, 68, 0.1) !important;
 }
+
+/* ===== Mobile Responsive (Bottom Navigation) ===== */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: 64px;
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    padding: 0;
+    align-items: center;
+    border-right: none;
+    border-top: 1px solid var(--border);
+    background: rgba(14, 14, 28, 0.98);
+  }
+
+  .sidebar-logo,
+  .sidebar-user {
+    display: none; /* Ẩn logo và thông tin user ở màn hình nhỏ */
+  }
+
+  .sidebar-nav {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    gap: 0;
+  }
+
+  .sidebar-nav-item {
+    flex-direction: column;
+    padding: 8px 4px;
+    gap: 4px;
+    font-size: 10px;
+    border-radius: 0;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sidebar-nav-item span:not(.nav-badge-dot) {
+    display: block; /* Hiện text bên dưới icon */
+  }
+  
+  .sidebar-nav-item.active {
+    background: transparent;
+    border: none;
+    color: var(--purple-light);
+  }
+  
+  .sidebar-nav-item.active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 32px;
+    height: 3px;
+    background: var(--gradient-primary);
+    border-radius: 0 0 4px 4px;
+  }
+
+  .nav-badge-dot {
+    position: absolute;
+    top: 6px;
+    right: calc(50% - 14px);
+    margin: 0;
+  }
+}
